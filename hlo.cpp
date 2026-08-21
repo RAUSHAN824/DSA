@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     // NORMAL OUTPUT SYNTAX
-    // cout << "hello world \n";
+    cout << "hello world \n";
 
 
               // //input output number 
