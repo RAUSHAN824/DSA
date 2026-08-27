@@ -15,7 +15,7 @@ int countdigit(int p){
     }
     return c;
 }
-int reverse(long long x) {
+int reverse_number(long long x) {
      int r;
      long long z=0;
      
