@@ -15,15 +15,18 @@ int countdigit(int p){
     }
     return c;
 }
-int reverse_number(int y){
-    int w;
-    int rev_no=0;
-    while(y>0){
-        w= y%10;
-        y=y/10;
-        rev_no =(rev_no*10)+w;
+int reverse(long long x) {
+     int r;
+     long long z=0;
+     
+     while(x!=0){
+        r=x%10;
+        x=x/10;
+        z=(z*10)+r;
+        
+     }
+     return z;
     }
-}
 // int palindrom(int z){
 //     int ar[];
 
