@@ -44,16 +44,35 @@ int GCD(int x, int y){
     }
     return q;
 }
+int odd_digit(int n) {
+    int p;
+    int count = 0;
+
+    while (n > 0) {
+        p = n % 10;
+
+        if (p % 2 != 0) {
+            count++;
+        }
+
+        n = n / 10;
+    }
+
+    return count;
+}
+
 int main(){
     int n,m;
     int g;
     cout<<"enter the numbers :";
-    cin>> n>>m;
+    cin>> n;
     // int digit= countdigit(n);
     // // cout<<digit;
     // int reverse= reverse_number(n);
     // cout<<reverse;
-    g=GCD(n,m);
+    g=odd_digit(n);
     cout<<g;
+
+    
     return 0;
 }
