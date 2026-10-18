@@ -60,17 +60,31 @@ int odd_digit(int n) {
 
     return count;
 }
+int LCM(int num1, int num2) {
+    int i;
 
+    if (num1 > num2)
+        i = num1;
+    else
+        i = num2;
+
+    while (1) {
+        if (i % num1 == 0 && i % num2 == 0)
+            return i;
+
+        i++;
+    }
+}
 int main(){
     int n,m;
     int g;
     cout<<"enter the numbers :";
-    cin>> n;
-    // int digit= countdigit(n);
-    // // cout<<digit;
-    // int reverse= reverse_number(n);
-    // cout<<reverse;
-    g=odd_digit(n);
+    cin>> n>>m;
+    // // int digit= countdigit(n);
+    // // // cout<<digit;
+    // // int reverse= reverse_number(n);
+    // // cout<<reverse;
+    g=LCM(n,m);
     cout<<g;
 
     
