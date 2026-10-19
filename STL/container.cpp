@@ -13,10 +13,6 @@ using namespace std;
 //              allow fast random acces to element.
 
 #include<vector>
-
-
-
-
 int main(){
 
     //vector initailize
@@ -50,11 +46,68 @@ int main(){
     
     //to find capacity of vector
     cout<<marks.capacity()<<endl;//output is 8
-
+    
     //to reserve the capacity for any vector
     marks.reserve(15);
     cout<<marks.capacity()<<endl;//output is 15
+
+
+    //traverse the vector using iterator 
+    vector<int>::iterator it =marks.begin();//initailize the iterator and points the first element
+    while(it!=marks.end()){
+        cout<<*it<<" ";
+        it++;
+    }
+    cout<< endl;
+
+
+
+    //now we have 4 function insert,erase,clear,swap
+
+    // //1.INSERT
+    //  //insert(iterator_position , value) 
+    // // marks.insert(marks.begin() ,90);
+    // // for(int i=0;i<marks.size();i++){
+    // //     cout<<marks[i]<<endl;
+    // // }// output is 90 10 20 30 40 50
     
+    // //2.ERASE
+    // //erase(iterator_position)  deletes a particular index value
+    // // erase(iterator_first , iterator_second) deletes a range value 
+    // // marks.erase(marks.begin());
+    // // for(int i=0;i<marks.size();i++){
+    // //     cout<<marks[i]<<endl;
+    // // }//output is 10 20 30 40 50
+
+    // // //to erase at particular index
+    // // marks.erase(marks.begin() + 2);
+    // //  for(int i=0;i<marks.size();i++){
+    // //     cout<<marks[i]<<" ";
+    // // }//the output is 10 20 40 50
+
+    // //3.swap 
+    // //vector_first.swap(vector_second)
+    // vector<int> roll;
+    // roll.swap(marks);
+    // //roll has all values of marks because we swap all values while marks has no elements with size 0
+    // for(int i=0;i<roll.size();i++){
+    //     cout<<roll[i]<<" ";
+    // }
+    // cout<<endl;
+    // cout<<marks.size();
+
+
+    // // 4.marks.clear(); //this makes the size to zero and deletes all elements 
+    // // cout<<"size of vector is : "<<marks.size()<<endl; //output is 0
+
+
+
+/**********************************two D vector ******************************************* */
+
+    //initialize a 2d vector or array : vector<vector<int>>. 
+    vector<vector<int>> school(4,vector<int>(4,0));
+
+
     return 0;
 }
 
