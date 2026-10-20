@@ -21,8 +21,14 @@ in C++ that provide:
         and one pointer pointing to the next node.
         
 */
+#include<list>
+
 int main(){
+    list<int> L1;
+
+    list<int> L2={10,20,30};
 
     
+
     return 0;
 }
